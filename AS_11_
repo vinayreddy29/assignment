@@ -1,0 +1,6 @@
+f=open("test.txt","w")
+def file(fname):
+                  import os
+                  statinfo=os.stat(fname)
+                  return statinfo.st_size
+print("file size is",file("test.txt"))
